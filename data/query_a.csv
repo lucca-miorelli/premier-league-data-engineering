@@ -1,0 +1,21 @@
+position,team_name,matches_played,won,draw,lost,goals_scored,goals_conceded,points
+1,Manchester City,38,28,5,5,94,33,89
+2,Arsenal,38,26,6,6,88,43,84
+3,Manchester United,38,23,6,9,58,43,75
+4,Newcastle United,38,19,14,5,68,33,71
+5,Liverpool,38,19,10,9,75,47,67
+6,Brighton & Hove Albion,38,18,8,12,72,53,62
+7,Aston Villa,38,18,7,13,51,46,61
+8,Tottenham Hotspur,38,18,6,14,70,63,60
+9,Brentford,38,15,14,9,58,46,59
+10,Fulham,38,15,7,16,55,53,52
+11,Crystal Palace,38,11,12,15,40,49,45
+12,Chelsea,38,11,11,16,38,47,44
+13,Wolverhampton Wanderers,38,11,8,19,31,58,41
+14,West Ham United,38,11,7,20,42,55,40
+15,AFC Bournemouth,38,11,6,21,37,71,39
+16,Nottingham Forest,38,9,11,18,38,68,38
+17,Everton,38,8,12,18,34,57,36
+18,Leicester City,38,9,7,22,51,68,34
+19,Leeds United,38,7,10,21,48,78,31
+20,Southampton,38,6,7,25,36,73,25

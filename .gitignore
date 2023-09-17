@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.egg-info/
+dist/
+build/
+*.egg
+*.log
+*.pot
+*.pyc
+*.swp
+*~
+
+# Configuration
+*conf
+*.json
+.env
+
+# Virtual Environments
+.venv/

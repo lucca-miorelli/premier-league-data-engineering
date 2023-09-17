@@ -1,0 +1,35 @@
+version: '3'
+services:
+  # PostgreSQL database service
+  postgres:
+    image: postgres:latest
+    container_name: premier-league-postgres
+    env_file:
+      - .env  # Loads environments variables from .env file
+    ports:
+      - "5432:5432"  # Map container's 5432 port to the host
+    volumes:
+      - postgres_data:/var/lib/postgresql/data  # Persist PostgreSQL data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql  # Initialize DB with SQL script
+    networks:
+      - mynetwork
+
+  # Python service
+  premier-league-python-etl:
+    container_name:   premier-league-python
+    build:
+      context: .  # Build from current directory
+    env_file:
+      - .env  # Loads environments variables from .env file
+    depends_on:
+      - postgres  # Ensure that PostgreSQL is started before this service
+    networks:
+      - mynetwork
+    volumes:
+      - ./data:/app/data  # Mount the data directory into the container
+
+volumes:
+  postgres_data:
+
+networks:
+  mynetwork:
